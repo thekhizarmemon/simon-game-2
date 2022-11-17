@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #191919;
+    color: #ECDBBA;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    padding: 5rem 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.red {
+    background-color: #f25022;
+}
+
+.green {
+    background-color: #7fba00;
+}
+
+.blue {
+    background-color: #00a4ef;
+}
+
+.yellow {
+    background-color: #ffb900;
+}
+
+.pressed {
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px 0 #fff;
+}
+
+.game-over-body {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.game-over-div {
+    border: 3px solid #fff;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.start-btn {
+    display: none !important;
+}
+
+.current-score {
+    margin-top: 1rem;
+    opacity: 0.75;
+}
+
+.high-score {
+    opacity: 0.5;
+}
+
+@media (max-width: 871px) {
+    .title {
+        display: none;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .btn {
+        width: 100px;
+        height: 100px;
+        margin: 0.5rem;
+    }
+
+    .start-btn {
+        display: block !important;
+        font-size: 1.5rem;
+        padding: 0.1rem 1rem;
+        letter-spacing: 0.1rem;
+        font-family: inherit;
+        font-weight: 700;
+        background-color: #ECDBBA;
+        border: none;
+        border-radius: 0.1rem;
+        color: #191919;
+        margin: 5rem auto 3rem auto;
+    }
+
+    .current-score,
+    .high-score {
+        font-size: 1.25rem;
+    }
+}
